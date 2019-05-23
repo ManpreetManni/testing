@@ -10,11 +10,16 @@ import java.util.Scanner;
 
 public class ManniManpreet_Assign1 {
     public static void main(String[] args) {
-        // creating an array of Employee Class.
-        Employee[] arrayOfEmployee = new Employee[10];
         
         // declaring and initializing Scanner object to take user inputs.
         Scanner input = new Scanner(System.in);
+        
+        // to get the number of employees
+        System.out.print("Enter the number of employees: ");
+        int userInput = input.nextInt();
+        
+        // creating an array of Employee Class.
+        Employee[] arrayOfEmployee = new Employee[userInput];
         
         // loop to take inputs and populate employee array using setter methods.
         for(int i = 0; i < arrayOfEmployee.length; i++){
